@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: "Welcome to Flutter",
       home: RandomWords(),
       theme: ThemeData(
-        primaryColor: Colors.red,
+        primaryColor: Colors.blue,
       ),
     );
   }
@@ -43,6 +43,7 @@ class RandomWordsState extends State<RandomWords> {
       floatingActionButton: FloatingActionButton(
           tooltip: "Like",
           child: Text('${_saved == null ? 0 : _saved.length}'),
+          backgroundColor: Colors.blue,
           onPressed: _pushSaved
       ),
     );
